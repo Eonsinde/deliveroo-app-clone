@@ -13,7 +13,7 @@ const SearchFilter = () => {
                 style={tw``}
                 name='search-outline'
                 type='ionicon'
-                color={`#fb923c`}
+                color={`#80CCBB`}
                 size={20}
             />
             <TextInput 
@@ -26,7 +26,7 @@ const SearchFilter = () => {
                 style={tw``}
                 name='options-outline'
                 type='ionicon'
-                color={`#fb923c`}
+                color={`#80CCBB`}
                 size={25}
             />
         </View>

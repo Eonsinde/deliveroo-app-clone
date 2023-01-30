@@ -20,7 +20,7 @@ const Header = () => {
                   style={tw``}
                   name='chevron-down-sharp'
                   type='ionicon'
-                  color={`#fb923c`}
+                  color={`#80CCBB`}
                   size={20}
                 />
               </View>
@@ -31,7 +31,7 @@ const Header = () => {
             style={tw``}
             name='person-outline'
             type='ionicon'
-            color={`#fb923c`}
+            color={`#80CCBB`}
             size={35}
           />
       </View>

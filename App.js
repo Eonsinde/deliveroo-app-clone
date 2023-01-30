@@ -6,6 +6,7 @@ import { SafeAreaProvider } from 'react-native-safe-area-context';
 import { tw } from './lib/tailwind';
 // components import 
 import HomeScreen from './screens/HomeScreen';
+import RestaurantScreen from './screens/RestaurantScreen';
 
 
 const Stack = createNativeStackNavigator();
@@ -22,17 +23,15 @@ export default function App() {
               headerShown: false, 
             }} 
           />
+          <Stack.Screen 
+            name="Restaurant" 
+            component={RestaurantScreen} 
+            options={{ 
+              headerShown: false, 
+            }} 
+          />
         </Stack.Navigator>
       </NavigationContainer>
     </SafeAreaProvider>
   );
 }
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-});
