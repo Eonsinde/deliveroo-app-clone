@@ -18,8 +18,10 @@ const FeaturedRow = ({ id, title, description }) => {
                 restaurants[]->{
                 ...,
                 category->,
-                dish->{name}
-                },
+                dish[]->{
+                    ...
+                }
+            },
             }[0]
         `, { id }).then(data => {
             setRestaurants(data?.restaurants);
@@ -57,7 +59,7 @@ const FeaturedRow = ({ id, title, description }) => {
                         genre={"Japanese"}
                         address={restaurant.address}
                         short_description={restaurant.short_description}
-                        dishes={[]}
+                        dishes={restaurant.dish}
                         long={restaurant.long}
                         lat={restaurant.lat}
                         imgUrl={restaurant.image}

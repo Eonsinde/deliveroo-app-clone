@@ -9,8 +9,8 @@ const Header = () => {
     <View style={tw`my-2 flex-row items-center justify-between`}>
       <View style={tw`flex-row items-center`}>
           <Image 
-              source={{ uri: 'https://links.papareact.com/wru' }}
-              style={tw`h-7 w-7 bg-gray-300 p-4 rounded-full`}
+            source={{ uri: 'https://links.papareact.com/wru' }}
+            style={tw`h-7 w-7 bg-gray-300 p-4 rounded-full`}
           />
           <View style={tw`ml-3`}>
               <Text style={tw`font-bold text-gray-400 text-xs `}>Deliver Now!</Text>
