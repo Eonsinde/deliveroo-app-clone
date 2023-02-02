@@ -1,7 +1,6 @@
 import { useState } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { TouchableOpacity, View, Text, Image } from 'react-native';
-import Currency from 'react-currency-format';
 import { urlFor } from '../sanity-connect';
 import { tw } from '../lib/tailwind';
 // icons import
@@ -35,7 +34,6 @@ const DishRow = ({ id, name, description, price, image }) => {
         <Text style={tw`text-sm text-gray-400`}>{description}</Text>
         <Text style={tw`text-gray-400`}>
           {price}
-          {/* <Currency.CustomCurrencyFormat value={price} /> */}
         </Text>
       </View>
       <View>
