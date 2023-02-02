@@ -4,11 +4,12 @@ import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import { SafeAreaProvider } from 'react-native-safe-area-context';
 import { Provider } from 'react-redux';
 import { store } from './store';
-import { tw } from './lib/tailwind';
 // components import 
 import HomeScreen from './screens/HomeScreen';
 import RestaurantScreen from './screens/RestaurantScreen';
 import CartScreen from './screens/CartScreen';
+import PreparingOrderScreen from './screens/PreparingOrderScreen';
+import DeliveryScreen from './screens/DeliveryScreen';
 
 
 const config = {
@@ -55,6 +56,26 @@ export default function App() {
               options={{ 
                 headerShown: false, 
                 presentation: 'modal',
+                gestureDirection: "horizontal",
+                transitionSpec: {
+                  open: config,
+                  close: config,
+                },
+              }} 
+            />
+            <Stack.Screen 
+              name="PreparingOrder" 
+              component={PreparingOrderScreen} 
+              options={{ 
+                headerShown: false, 
+              }} 
+            />
+            <Stack.Screen 
+              name="Delivery" 
+              component={DeliveryScreen} 
+              options={{ 
+                headerShown: false, 
+                presentation: 'fullScreenModal',
                 gestureDirection: "horizontal",
                 transitionSpec: {
                   open: config,
